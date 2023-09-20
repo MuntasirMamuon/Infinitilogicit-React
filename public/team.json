@@ -1,0 +1,22 @@
+[
+    {
+    "id":"01",
+    "name":"UI / UX Design",
+    "image":"/team-19.jpg"
+   
+},
+{
+    "id":"02",
+    "name":"Web Development",
+    "image":"/team-20.jpg"
+     
+}
+,
+{
+    "id":"03",
+    "name":"App Development",
+    "image":"/team-21.jpg"
+   
+}
+
+]

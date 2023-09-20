@@ -1,0 +1,523 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+    background-color: black;
+} */
+
+:root {
+  /* #405CFF in decimal RGB */
+  --main-color: rgb(64, 92, 255);
+  --main-color-rgb: 64, 92, 255;
+
+  /* #DFFB6D in decimal RGB */
+  --color-two: rgb(223, 251, 109);
+  --color-two-rgb: 223, 251, 109;
+
+  /* #14151D in decimal RGB */
+  --color-three: rgb(20, 21, 29);
+  --color-three-rgb: 20, 21, 29;
+
+  /* #9F89F7 in decimal RGB */
+  --color-four: rgb(159, 137, 247);
+  --color-four-rgb: 159, 137, 247;
+
+  /* #6D2BFF in decimal RGB */
+  --color-five: rgb(109, 43, 255);
+  --color-five-rgb: 109, 43, 255;
+
+  /* #21D3FD in decimal RGB */
+  --color-six: rgb(33, 211, 253);
+  --color-six-rgb: 33, 211, 253;
+
+  /* #161720 in decimal RGB */
+  --color-seven: rgb(22, 23, 32);
+  --color-seven-rgb: 22, 23, 32;
+
+  /* #C2C2C2 in decimal RGB */
+  --color-eight: rgb(194, 194, 194);
+  --color-eight-rgb: 194, 194, 194;
+
+  /* #FFCC4A in decimal RGB */
+  --color-nine: rgb(255, 204, 74);
+  --color-nine-rgb: 255, 204, 74;
+
+  /* #BEBEBE in decimal RGB */
+  --color-ten: rgb(190, 190, 190);
+  --color-ten-rgb: 190, 190, 190;
+
+  /* #181923 in decimal RGB */
+  --color-eleven: rgb(24, 25, 35);
+  --color-eleven-rgb: 24, 25, 35;
+
+  /* #1A1B22 in decimal RGB */
+  --color-twelve: rgb(26, 27, 34);
+  --color-twelve-rgb: 26, 27, 34;
+
+  /* #B9B9B9 in decimal RGB */
+  --color-thirteen: rgb(185, 185, 185);
+  --color-thirteen-rgb: 185, 185, 185;
+
+  /* #878787 in decimal RGB */
+  --color-fourteen: rgb(135, 135, 135);
+  --color-fourteen-rgb: 135, 135, 135;
+
+  /* #13141B in decimal RGB */
+  --color-fifteen: rgb(19, 20, 27);
+  --color-fifteen-rgb: 19, 20, 27;
+
+  /* #713FDB in decimal RGB */
+  --color-sixteen: rgb(113, 63, 219);
+  --color-sixteen-rgb: 113, 63, 219;
+
+  /* #7A7A7A in decimal RGB */
+  --color-seventeen: rgb(122, 122, 122);
+  --color-seventeen-rgb: 122, 122, 122;
+
+  /* #FFE43B in decimal RGB */
+  --color-eighteen: rgb(255, 228, 59);
+  --color-eighteen-rgb: 255, 228, 59;
+
+  /* #FFB23F in decimal RGB */
+  --color-nineteen: rgb(255, 178, 63);
+  --color-nineteen-rgb: 255, 178, 63;
+
+  /* #818181 in decimal RGB */
+  --color-twenty: rgb(129, 129, 129);
+  --color-twenty-rgb: 129, 129, 129;
+
+  /* #73747D in decimal RGB */
+  --color-twentyone: rgb(115, 116, 125);
+  --color-twentyone-rgb: 115, 116, 125;
+
+  /* #F8F8F8 in decimal RGB */
+  --color-twentytwo: rgb(248, 248, 248);
+  --color-twentytwo-rgb: 248, 248, 248;
+
+  /* #8A8A8A in decimal RGB */
+  --color-twentythree: rgb(138, 138, 138);
+  --color-twentythree-rgb: 138, 138, 138;
+
+  /* #0052CC in decimal RGB */
+  --color-twentyfour: rgb(0, 82, 204);
+  --color-twentyfour-rgb: 0, 82, 204;
+
+  /* #8A90A2 in decimal RGB */
+  --color-twentyfive: rgb(138, 144, 162);
+  --color-twentyfive-rgb: 138, 144, 162;
+
+  /* #68E4FF in decimal RGB */
+  --color-twentysix: rgb(104, 228, 255);
+  --color-twentysix-rgb: 104, 228, 255;
+
+  /* #FDD60D in decimal RGB */
+  --color-twentyseven: rgb(253, 214, 13);
+  --color-twentyseven-rgb: 253, 214, 13;
+
+  /* #F0F0F0 in decimal RGB */
+  --color-twentyeight: rgb(240, 240, 240);
+  --color-twentyeight-rgb: 240, 240, 240;
+
+  /* #090928 in decimal RGB */
+  --color-twentynine: rgb(9, 9, 40);
+  --color-twentynine-rgb: 9, 9, 40;
+
+  /* #272D38 in decimal RGB */
+  --color-thirty: rgb(39, 45, 56);
+  --color-thirty-rgb: 39, 45, 56;
+
+  /* #667085 in decimal RGB */
+  --color-thirtyone: rgb(102, 112, 133);
+  --color-thirtyone-rgb: 102, 112, 133;
+
+  /* #F6F6F6 in decimal RGB */
+  --color-thirtytwo: rgb(246, 246, 246);
+  --color-thirtytwo-rgb: 246, 246, 246;
+
+  /* #292930 in decimal RGB */
+  --color-thirtythree: rgb(41, 41, 48);
+  --color-thirtythree-rgb: 41, 41, 48;
+
+  /* #14151E in decimal RGB */
+  --color-thirtyfour: rgb(20, 21, 30);
+  --color-thirtyfour-rgb: 20, 21, 30;
+
+  /* #171821 in decimal RGB */
+  --color-thirtyfive: rgb(23, 24, 33);
+  --color-thirtyfive-rgb: 23, 24, 33;
+
+  /* #FF7425 in decimal RGB */
+  --color-thirtysix: rgb(255, 116, 37);
+  --color-thirtysix-rgb: 255, 116, 37;
+
+  /* #101626 in decimal RGB */
+  --color-thirtyseven: rgb(16, 22, 38);
+  --color-thirtyseven-rgb: 16, 22, 38;
+
+  /* #222222 in decimal RGB */
+  --color-thirtyeight: rgb(34, 34, 34);
+  --color-thirtyeight-rgb: 34, 34, 34;
+
+  /* #666666 in decimal RGB */
+  --color-thirtynine: rgb(102, 102, 102);
+  --color-thirtynine-rgb: 102, 102, 102;
+
+  /* #101010 in decimal RGB */
+  --color-fourty: rgb(16, 16, 16);
+  --color-fourty-rgb: 16, 16, 16;
+
+  /* #10171e in decimal RGB */
+  --color-fourtyone: rgb(16, 23, 30);
+  --color-fourtyone-rgb: 16, 23, 30;
+
+  /* #131a21 in decimal RGB */
+  --color-fourtytwo: rgb(19, 26, 33);
+  --color-fourtytwo-rgb: 19, 26, 33;
+
+  /* #19212a in decimal RGB */
+  --color-fourtythree: rgb(25, 33, 42);
+  --color-fourtythree-rgb: 25, 33, 42;
+
+  /* #1effff in decimal RGB */
+  --color-fourtyfive: rgb(30, 255, 255);
+  --color-fourtyfive-rgb: 30, 255, 255;
+
+  /* #4c40f6 in decimal RGB */
+  --color-fourtysix: rgb(76, 64, 246);
+  --color-fourtysix-rgb: 76, 64, 246;
+
+  /* #e2e2e2 in decimal RGB */
+  --color-fourtyseven: rgb(226, 226, 226);
+  --color-fourtyseven-rgb: 226, 226, 226;
+
+  /* #656565 in decimal RGB */
+  --color-fourtyeight: rgb(101, 101, 101);
+  --color-fourtyeight-rgb: 101, 101, 101;
+
+  /* #eef4fc in decimal RGB */
+  --color-fourtynine: rgb(238, 244, 252);
+  --color-fourtynine-rgb: 238, 244, 252;
+
+  /* #fecc05 in decimal RGB */
+  --color-fifty: rgb(254, 204, 5);
+  --color-fifty-rgb: 254, 204, 5;
+
+  /* #463800 in decimal RGB */
+  --color-fiftyone: rgb(70, 56, 0);
+  --color-fiftyone-rgb: 70, 56, 0;
+
+  /* #1b1b1b in decimal RGB */
+  --color-fiftytwo: rgb(27, 27, 27);
+  --color-fiftytwo-rgb: 27, 27, 27;
+
+  /* #181717 in decimal RGB */
+  --color-fiftythree: rgb(24, 23, 23);
+  --color-fiftythree-rgb: 24, 23, 23;
+
+  /* #ebebeb in decimal RGB */
+  --color-fiftyfour: rgb(235, 235, 235);
+  --color-fiftyfour-rgb: 235, 235, 235;
+
+  /* #bbbbbb in decimal RGB */
+  --color-fiftyfive: rgb(187, 187, 187);
+  --color-fiftyfive-rgb: 187, 187, 187;
+
+  /* #111219 in decimal RGB */
+  --color-fiftysix: rgb(17, 18, 25);
+  --color-fiftysix-rgb: 17, 18, 25;
+
+  /* #cccccc in decimal RGB */
+  --color-fourtyfour: rgb(204, 204, 204);
+  --color-fourtyfour-rgb: 204, 204, 204;
+  --color-thirtyseven: rgb(16, 22, 38);
+  --color-thirtyseven-rgb: 16, 22, 38;
+
+  /* #ffffff in decimal RGB */
+  --white-color: rgb(255, 255, 255);
+  --white-color-rgb: 255, 255, 255;
+
+  /* #000000 in decimal RGB */
+  --black-color: rgb(0, 0, 0);
+  --black-color-rgb: 0, 0, 0;
+
+  /* #010101 Heading Color in decimal RGB */
+  --heading-color: rgb(1, 1, 1);
+}
+
+.primary-color {
+  background: linear-gradient(133deg, #3f5190 4.69%, #1d31e3 98.96%);
+}
+
+.bgImg {
+  background: url(../../public/pattern-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  min-height: 100vh;
+}
+
+/* 
+=================================================================
+services page css part start 
+======================================================================================
+*/
+
+.bgServices {
+  background: url(../../public/inner_banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: full;
+  min-height: 60vh;
+}
+
+.btn-style-one {
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  overflow: hidden;
+  text-align: center;
+  padding: 19px 40px;
+  border-radius: 5px;
+  display: inline-block;
+  letter-spacing: 0.14em;
+  color: var(--white-color);
+  font-size: var(--font-14);
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    var(--color-four) 0%,
+    var(--color-five) 32.16%,
+    var(--main-color) 64.84%,
+    var(--color-six) 98.02%
+  );
+}
+
+.btn-style-one:hover {
+  color: var(--white-color);
+}
+
+.btn-style-one:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 5px;
+  transition: scale(1.05, 1);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: linear-gradient(
+    90deg,
+    var(--color-six) 0%,
+    var(--color-six) 32.16%,
+    var(--main-color) 64.84%,
+    var(--color-four) 98.02%
+  );
+}
+
+.btn-style-one:hover::before {
+  opacity: 1;
+  transition: scale(1, 1);
+}
+
+.services-section-six {
+  position: relative;
+  padding: 120px 0px 90px;
+}
+
+.service-block-six {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.service-block-six .inner-box {
+  position: relative;
+  overflow: hidden;
+  padding: 45px 35px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  background-color: var(--color-thirtyseven);
+}
+
+.service-block-six .inner-box:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 5px;
+  opacity: 0;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transform: scale(0.04, 1);
+  background: linear-gradient(
+    90deg,
+    var(--color-four) 0%,
+    var(--color-five) 32.16%,
+    var(--main-color) 64.84%,
+    var(--color-six) 98.02%
+  );
+}
+
+.service-block-six .inner-box:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.service-block-six .post-number {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  line-height: 1em;
+  font-size: 40px;
+  color: transparent;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  font-family: var(--font-family-Inter);
+  transform: rotate(20deg);
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-block-six .inner-box:hover .post-number {
+  transform: rotate(0deg);
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.service-block-six .icon-box {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.service-block-six .inner-box:hover .icon-box {
+  transform: rotateY(180deg);
+}
+
+.list {
+  position: relative;
+  margin-top: 45px;
+  padding-left: 35px;
+  border-left: 1px solid var(--main-color);
+}
+
+.list li {
+  position: relative;
+
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--color-fifteen);
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list li:before {
+  position: absolute;
+  content: "";
+  left: -43px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+}
+
+
+
+
+.service-block-six .icon{
+	position:relative;
+	line-height:1em;
+	font-family: "Flaticon";
+	font-size:var(--font-70);
+	background: linear-gradient(90deg, var(--color-four) 0%, var(--color-five) 32.16%, var(--main-color) 64.84%, var(--color-six) 98.02%);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+
+.service-block-six .read-more{
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: var(--margin-top-25);
+    font-family: var(--font-family-Inter);
+    border-bottom: 1px solid var(--white-color);
+}
+
+.service-block-six .read-more:hover{
+	color:var(--main-color);
+	border-color:var(--main-color);
+}
+
+
+/* 
+=================================================================
+services page css part end
+======================================================================================
+*/
+/* 
+=================================================================
+blog page css part start
+======================================================================================
+*/
+
+
+.image-style Image{
+  position:relative;
+	width:100%;
+	display:block;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+
+
+.image-style Image :hover{
+  opacity:0.70;
+	transform:scale(1.06,1.06) rotate(1deg);
+}
+.services-card-bg{
+  background: var(--color-twentytwo);
+}
+.services-item:hover{
+  color: var(--main-color);
+}
+
+/* ================================================= */
+/* Our team  */
+/* ==============================================*/
+.bg{
+    background: linear-gradient(90deg, var(--color-four) 0%, var(--color-five) 32.16%, var(--main-color) 64.84%, var(--color-six) 98.02%);
+    opacity: 70%;
+    
+}
+.letter{
+  letter-spacing: 8px;
+}
